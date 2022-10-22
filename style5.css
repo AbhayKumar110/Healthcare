@@ -1,0 +1,104 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    /* background-color: green; */
+    background: url(./images/img6.jpg);
+    background-repeat: no-repeat;
+    /* background-size: auto; */
+    max-width: 100%;
+    max-height: auto;
+
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  
+  .row {margin: 0 -5px;}
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  .card {
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+  }
+  
+  
+  @media screen and (max-width: 992px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    body{
+      background-color: green;
+      background: url(./images/img6.jpg);
+      /* background-repeat: no-repeat; */
+      background-size: auto;
+      min-height: auto;
+  }
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+.card {
+    flex: 1 0 500px;
+    box-sizing: border-box;
+    margin: 1rem .25em;
+}
+.card img{
+    height: 10em;
+    border-radius: 20em;
+
+}
+
+
+.btn2{
+    max-width: 25%;
+    max-height: 23%;
+    border-radius: 10px;
+  }
+  .btn2:hover{
+    background-color: red;
+    animation: btn 0.5s ease-in infinite;
+  }
+  @keyframes btn2{
+    75%  {transform: scale(0.9);}
+    75%  {transform: scale(1.1);}
+  }
+
+  .next2{
+    padding-left: 90%;
+    color: white;
+    text-decoration-color: bisque;
+
+  }
+
+  .next{
+    padding-left: 20%;
+    color: rgb(149, 11, 11);
+  }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style4.css">
+    <title>Health Care Medical</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+          <div class="logo-container"><h1  class="logo">D-Medicare</h1></div>
+          <div class="menu-container">
+            <ul class="menu-list">
+             <a href="index.html"><li class="menu-list-item active">Home</li></a>
+              <a href="index2.html"><li class="menu-list-item">About</li></a>
+              <a href="index3.html"><li class="menu-list-item">Doctors</li></a>
+              <a href="index4.html"><li class="menu-list-item">Services</li></a>
+              <a href="index5.html"><li class="menu-list-item">Book Appointment</li></a>
+              <a href="index6.html"><li class="menu-list-item">Contact</li></a>
+            </ul>
+          </div>
+        <div class="container">
+            <a href=""><button class="max">Learn More</button></a>
+        </div>
+        </div>
+    </div>
+    <h1 class="App">Appointment Form</h2> 
+<div class="middle">
+    <table cellpadding="10" cellspacing="2" align="center">
+        <th class="row1">Name</th>
+        <tr>
+            <td class="col1">Name</td>
+            <td class="col2"><input type="text" name="Name" id="PName" placeholder="name"></td>
+        </tr>
+        <th class="row1">Appointmnet to</th>
+        <tr>
+            <td class="col1">Appointment to</td>
+            <td class="col2">
+                <select name="person" id="projectAssigned">
+                    <option value="Er Merry Petision">Er Merry Petision</option>
+                    <option value="Er Deepak Bhusan">Er Deepak Bhusan</option>
+                    <option value="Er Robert Watson">Er Robert Watson</option>
+                </select>
+            </td>
+        </tr>
+
+        <th class="row1">Date</th>
+        <tr>
+            <td class="col1">Date</td>
+            <td class="col2"><input type="date" name="Start Date" id="SDate" class="startDate"></td>
+        </tr>
+        <th class="row1">E-mail</th>
+        <tr>
+            <td class="col1">E-mail</td>
+            <td class="col2"><input type="text" name="E-mail" id="E-Mail" class="email" placeholder="abc@gmail.com"></td>
+        </tr>
+
+        <th class="row1">Priority</th>
+        <tr>
+            <td class="col1">Priority</td>
+            <td class="col2">
+                <input type="radio" name="priority" id="Emergency" value="High"> Emergency
+                <input type="radio" name="priority" id="average" value="Average"> Average
+                <input type="radio" name="priority" id="low" value="Low"> Low
+            </td>
+        </tr>
+        <th class="row1">Description</th>
+        <tr>
+            <td class="col1">Description</td>
+            <td class="col2"><textarea name="description" id="description" cols="35" rows="4"></textarea></td>
+        </tr>
+        <tr colspan="2" align="center">
+            <td>
+                <button type="submit" class="submit1"  onclick="submitProjectDetails()">Submit</button>
+            </td>
+            <td>
+                <button type="reset" class="reset1" onclick="resetProjectDetails()">Clear</button>
+            </td>
+        </tr>
+        <tr colspan="1" align="center">
+            <td>
+                <button type="reset" class="reset2" onclick="resetProjectDetails()">Clear</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="next">
+    <a href="index4.html"> Previous </a>
+</div>
+<div class="next2">
+    <a href="index6.html">Next>></a>
+</div>
+</body>
+</html>

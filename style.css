@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Trirong", serif;
+}
+
+.navbar{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+.navbar-container{
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  height: 100%;
+  color: white;
+  
+}
+
+.logo-container{
+    flex: 1;
+    font-size: 15px;
+    color: green;
+  }
+  
+  .menu-container{
+    flex: 2;
+  }
+
+  .menu-list-item.active:hover{
+    text-transform: uppercase;
+  }
+  
+  .menu-list{
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu-list-item{
+    margin-right: 30px;
+    font-family: 'Fira Sans', sans-serif;
+  }
+
+  .menu-list-item:hover{
+    text-transform: uppercase;
+    display: block;
+  }
+  
+  .menu-list-item.active{
+    font-weight: bold;
+  }
+  .container{
+    flex: -1;
+
+  }
+.max {
+   display: block;
+   font-size: 18px;
+   border-radius: 10px;
+   
+}
+.max:hover{
+    background-color: green;
+    text-transform: uppercase;
+}
+.rest img{
+    max-width: 100%;
+    height: auto;
+}
+.menu-container2{
+    flex:1;
+}
+.menu-list2{
+    display: flex;
+    list-style: none;
+}
+
+
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+body{
+  background-color: green;
+  background: url(./images/img3.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  max-width: 100%;
+  max-height: auto;
+}
+.last{
+  padding-top: 8%;
+  margin-left: 10%;
+  font-size: 20px;
+}
+.med{
+  font-size: 80px;
+  font-weight: 30%;
+  color: darkgreen;
+}
+.htag
+{
+  margin-left: 12px ;
+}
+.last1 h1{
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, start),
+      blink-caret .5s step-end infinite;
+      color: green;
+      font-size: 60px;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: green }
+}
+.last2{
+  margin-left: 10%;
+}
+
+.btn{
+  font-size: 20px;
+  /* font-weight: bold; */
+  border-radius: 25px;
+  ṃax-height: 30%;
+  max-width: 10%;
+}
+.btn:hover{
+  background-color: red;
+  animation: btn 0.5s ease-in infinite;
+}
+@keyframes btn{
+  25%  {transform: scale(0.9);}
+  75%  {transform: scale(1.1);}
+}
+footer{
+  margin-left: 80%;
+  padding-top: 7%;
+}
+#bt{
+  margin-left: 75%;
+  padding-top: 5%;
+}
+
+/* @media only screen and (min-width: 768px) {
+  body{
+    max-width: 100%;
+    height: auto;
+  }
+} */
+
+#re{
+  background-color: green;
+  background: url(./images/img6.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-container{
+    display: none;
+    
+  }
+  
+  .last2{
+    display: none;
+  }
+  header{
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  #About{
+    display: flex;
+  }
+  #bt{
+    margin-left: 8%;
+  }
+}
